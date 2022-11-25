@@ -1,0 +1,24 @@
+﻿@model List<Student>
+
+@{
+    Layout = "_Layout2";
+}
+
+<h1>@ViewBag.Title</h1>
+<p style="background-color: red">sample text</p>
+ <table class="mui-table">
+  <thead>
+    <tr>
+       @foreach(var name in ViewBag.Names)
+    {
+        <th>@name</th>
+    }
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+   
+
+
